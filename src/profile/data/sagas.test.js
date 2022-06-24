@@ -6,7 +6,7 @@ import {
   select,
   all,
 } from 'redux-saga/effects';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
 
 import * as profileActions from './actions';
 import { handleSaveProfileSelector, userAccountSelector } from './selectors';
@@ -21,7 +21,7 @@ jest.mock('./services', () => ({
   getCourseCertificates: jest.fn(),
 }));
 
-jest.mock('@edx/frontend-platform/auth', () => ({
+jest.mock('frontend-platform-vi/auth', () => ({
   getAuthenticatedUser: jest.fn(),
 }));
 

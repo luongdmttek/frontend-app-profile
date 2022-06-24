@@ -1,8 +1,8 @@
 /* eslint-disable global-require */
-import { getConfig } from '@edx/frontend-platform';
-import * as analytics from '@edx/frontend-platform/analytics';
-import { AppContext } from '@edx/frontend-platform/react';
-import { configure as configureI18n, IntlProvider } from '@edx/frontend-platform/i18n';
+import { getConfig } from 'frontend-platform-vi';
+import * as analytics from 'frontend-platform-vi/analytics';
+import { AppContext } from 'frontend-platform-vi/react';
+import { configure as configureI18n, IntlProvider } from 'frontend-platform-vi/i18n';
 import { mount } from 'enzyme';
 import React from 'react';
 import { Provider } from 'react-redux';
@@ -37,7 +37,7 @@ Object.defineProperty(global.document, 'cookie', {
   value: `${getConfig().LANGUAGE_PREFERENCE_COOKIE_NAME}=en`,
 });
 
-jest.mock('@edx/frontend-platform/auth', () => ({
+jest.mock('frontend-platform-vi/auth', () => ({
   configure: () => {},
   getAuthenticatedUser: () => null,
   fetchAuthenticatedUser: () => null,
@@ -45,7 +45,7 @@ jest.mock('@edx/frontend-platform/auth', () => ({
   AUTHENTICATED_USER_CHANGED: 'user_changed',
 }));
 
-jest.mock('@edx/frontend-platform/analytics', () => ({
+jest.mock('frontend-platform-vi/analytics', () => ({
   configure: () => {},
   identifyAnonymousUser: jest.fn(),
   identifyAuthenticatedUser: jest.fn(),

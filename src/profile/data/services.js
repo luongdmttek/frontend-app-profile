@@ -1,6 +1,6 @@
-import { ensureConfig, getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient as getHttpClient } from '@edx/frontend-platform/auth';
-import { logError } from '@edx/frontend-platform/logging';
+import { ensureConfig, getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient as getHttpClient } from 'frontend-platform-vi/auth';
+import { logError } from 'frontend-platform-vi/logging';
 import { camelCaseObject, convertKeyNames, snakeCaseObject } from '../utils';
 
 ensureConfig(['LMS_BASE_URL'], 'Profile API service');

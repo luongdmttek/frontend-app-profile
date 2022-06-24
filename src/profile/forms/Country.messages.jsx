@@ -1,4 +1,4 @@
-import { defineMessages } from '@edx/frontend-platform/i18n';
+import { defineMessages } from 'frontend-platform-vi/i18n';
 
 const messages = defineMessages({
   'profile.country.label': {

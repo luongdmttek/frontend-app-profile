@@ -1,5 +1,5 @@
-import { history } from '@edx/frontend-platform';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { history } from 'frontend-platform-vi';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
 import pick from 'lodash.pick';
 import {
   all,

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StatusAlert } from '@edx/paragon';
-import { FormattedMessage } from '@edx/frontend-platform/i18n';
-import { getConfig } from '@edx/frontend-platform';
+import { FormattedMessage } from 'frontend-platform-vi/i18n';
+import { getConfig } from 'frontend-platform-vi';
 
 function AgeMessage({ accountSettingsUrl }) {
   return (

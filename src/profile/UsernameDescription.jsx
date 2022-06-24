@@ -1,8 +1,8 @@
 import React from 'react';
-import { FormattedMessage } from '@edx/frontend-platform/i18n';
+import { FormattedMessage } from 'frontend-platform-vi/i18n';
 import { VisibilityOff } from '@edx/paragon/icons';
 import { Icon } from '@edx/paragon';
-import { getConfig } from '@edx/frontend-platform';
+import { getConfig } from 'frontend-platform-vi';
 
 function UsernameDescription() {
   return (

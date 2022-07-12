@@ -7,6 +7,7 @@ import { ensureConfig, getConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { StatusAlert, Hyperlink } from '@edx/paragon';
+import {Helmet} from "react-helmet";
 
 // Actions
 import {
@@ -294,6 +295,11 @@ class ProfilePage extends React.Component {
       <div className="profile-page">
         <Banner />
         {this.renderContent()}
+		<Helmet>
+          <script type="application/json" async="true">
+            {`{"user_id": ${this.context.authenticatedUser.userId}}`}
+          </script>
+        </Helmet>
       </div>
     );
   }

@@ -11,8 +11,12 @@ function AgeMessage({ accountSettingsUrl }) {
       dismissible={false}
       show
     >
-      <Alert.Heading id="profile.age.headline">
-        Your profile cannot be shared.
+      <Alert.Heading>
+        <FormattedMessage
+          id="profile.age.headline"
+          defaultMessage="Your profile cannot be shared."
+          description="Profile information"
+        />
       </Alert.Heading>
       <FormattedMessage
         id="profile.age.details"
